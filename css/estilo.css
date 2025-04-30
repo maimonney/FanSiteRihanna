@@ -1,0 +1,272 @@
+/*General*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 ;
+    line-height: 1.5 ;
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+
+}
+
+ul{
+    list-style: none;
+}
+
+/*Menú*/
+
+.menu{
+    background-color: black;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed ;
+    left:0;
+    top:0;
+    right:0;
+    z-index: 99999;
+}
+
+.menu_ul{
+    display: flex;
+    padding: 0 ;
+    margin: 0 ;
+}
+
+.menu_ul a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 17px;
+}
+
+.menu_ul a:hover{
+color: #FFD700;
+}
+
+.menu_ul a:visited{
+    color: goldenrod;
+}
+    
+
+/*Portada*/
+
+h1, h2{
+    color: #FFD700;
+    text-transform: uppercase;
+}
+
+h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 80px;
+}
+
+.portada{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.096)), url(../img/r1.jpg);
+    background-repeat: no-repeat ;
+    background-size: cover ;
+    background-attachment: scroll,fixed ;
+    color: white;
+    padding: 30px;
+    height: 510px;
+}
+
+.portada > div{
+    width: 500px;
+    margin-left: 50px;
+    margin-top: 150px;
+    margin-right: auto;
+}
+
+/*Contenido*/
+
+h2{
+    font-family: 'Roboto Serif', serif;
+    text-align: center;
+}
+
+/*Biografía*/
+
+#bio {
+    color: #fff;            
+    border-radius: 10px;    
+    padding: 30px 20px;    
+    margin: 40px auto;       
+    max-width: 900px;      
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    font-family: 'Roboto', sans-serif; 
+}
+
+#bio h2 {
+    font-family: 'Impact', sans-serif;  
+    color: #FFD700;           
+    font-size: 2.5rem;        
+    letter-spacing: 1px;       
+    text-transform: uppercase; 
+    margin-bottom: 20px;
+    text-align: center;       
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+#bio p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;          
+    margin-bottom: 20px;       
+    color: #ddd;              
+}
+
+#bio em {
+    font-style: italic;
+    color: #FFD700;           
+}
+
+#bio strong {
+    font-weight: bold;
+    color: #FFF;              
+}
+
+
+/*Discografía*/
+
+.music{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.music a{
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.music figure {
+    transition: transform 0.3s ease-in-out; 
+}
+
+.music figure:hover {
+    transform: scale(1.1); 
+}
+
+/*Filmografía*/
+
+.fila{
+    display: flex;
+    justify-content: center;
+}
+
+.columna{
+    padding: 0 10px;
+    margin: 25px;
+}
+
+.columna ul{
+    padding-left: 0;
+}
+
+/* Galería de fotos */
+#galeria div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#galeria a {
+    text-decoration: none;
+    margin: 5px 5px 0 5px;
+}
+
+/* Estilo del modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para la imagen dentro del modal */
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+/* Estilo del botón de cierre */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+/*Reconocimientos*/
+
+#reconocimientos{
+    margin: 40px;
+}
+
+#reconocimientos em{
+    color: rgb(238, 219, 110);
+}
+
+.text_rec p{
+    text-align: center;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+hr{
+    height: 3px;
+    background-color: #FFD700;
+    border-color: #FFD700;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Footer*/
+
+.pie_pag{
+    display: flex;
+    justify-content:space-around;
+}
+
+.fila_redes{
+    display: flex;
+}
+
+.fila_redes a{
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.fila_redes a:hover{
+    color: #FFD700;
+}
+
+.fila_redes a:visited{
+    color: goldenrod;
+}
+
+.text_center{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
