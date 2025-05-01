@@ -27,12 +27,15 @@
     </nav>
 
     <header id="home" class="portada">
-        <div>
+        <div class="info_home">
             <h1>Rihanna</h1>
             <p>
                 Robyn Rihanna Fenty, conocida simplemente como Rihanna, es una cantante, actriz, diseñadora y empresaria barbadense nacionalizada estadounidense. Es conocida por fusionar algunos géneros caribeños con música pop y por reinventar su imagen a través de los años.
             </p>
         </div>
+        <a href="#bio" class="scroll-down">
+            <span class="arrow">&#8595;</span>  <!-- Flecha hacia abajo -->
+        </a>
     </header>
 
     <main>
@@ -49,7 +52,6 @@
             </p>
         </section>
         
-
         <section id="cd">
             <h2>Discografía</h2>
 
@@ -142,52 +144,54 @@
         <section id="galeria">
             <h2>Galería de Fotos</h2>
             <div>
-                <a href="img/galeria/r2.jpg">
+                <a href="img/galeria/r2.jpg" class="open-img" aria-label="Ver imagen de Rihanna con su madre recibiendo un premio">
                     <img src="img/galeria/r2_min.jpg" alt="Rihanna con su madre (Mónica Braithwaite) recibiendo un premio.">
                 </a>
-                <a href="img/galeria/r3.jpg">
+                <a href="img/galeria/r3.jpg" class="open-img" aria-label="Ver imagen de Rihanna en una alfombra roja">
                     <img src="img/galeria/r3_min.jpg" alt="Rihanna en una alfombra roja.">
                 </a>
-                <a href="img/galeria/r4.jpg">
+                <a href="img/galeria/r4.jpg" class="open-img" aria-label="Ver foto de Rihanna para el video Lift Me Up">
                     <img src="img/galeria/r4_min.jpg" alt="Foto de Rihanna para el video Lift Me Up (From Black Panther: Wakanda Forever).">
                 </a>
-                <a href="img/galeria/r5.jpg">
+                <a href="img/galeria/r5.jpg" class="open-img" aria-label="Ver foto de Rihanna">
                     <img src="img/galeria/r5_min.jpg" alt="Foto de Rihanna.">
                 </a>
-                <a href="img/galeria/r6.jpg">
+                <a href="img/galeria/r6.jpg" class="open-img" aria-label="Ver foto de Rihanna en Loud Tour 2011">
                     <img src="img/galeria/r6_min.jpg" alt="Foto de Rihanna en Loud Tour 2011.">
                 </a>
-                <a href="img/galeria/r7.jpg">
+                <a href="img/galeria/r7.jpg" class="open-img" aria-label="Ver foto de Rihanna premier de album ANTY">
                     <img src="img/galeria/r7_min.jpg" alt="Foto de Rihanna premier de album ANTY.">
                 </a>
-                <a href="img/galeria/r8.jpg">
-                    <img src="img/galeria/r8_min.jpg" alt="Foto de Rihanna en una presentacion en 2011.">
+                <a href="img/galeria/r8.jpg" class="open-img" aria-label="Ver foto de Rihanna en una presentación en 2011">
+                    <img src="img/galeria/r8_min.jpg" alt="Foto de Rihanna en una presentación en 2011.">
                 </a>
-                <a href="img/galeria/r9.jpg">
-                    <img src="img/galeria/r9_min.jpg" alt="Foto de Rihannaen en los premios MTV VIDEO MUSIC AWARDS 2016.">
+                <a href="img/galeria/r9.jpg" class="open-img" aria-label="Ver foto de Rihanna en los premios MTV VIDEO MUSIC AWARDS 2016">
+                    <img src="img/galeria/r9_min.jpg" alt="Foto de Rihanna en los premios MTV VIDEO MUSIC AWARDS 2016.">
                 </a>
-                <a href="img/galeria/r10.jpg">
+                <a href="img/galeria/r10.jpg" class="open-img" aria-label="Ver foto de Rihanna">
                     <img src="img/galeria/r10_min.jpg" alt="Foto de Rihanna.">
                 </a>
-                <a href="img/galeria/r11.jpg">
+                <a href="img/galeria/r11.jpg" class="open-img" aria-label="Ver foto de Rihanna en el Super Bowl">
                     <img src="img/galeria/r11_min.jpg" alt="Foto de Rihanna en el Super Bowl.">
                 </a>
-                <a href="img/galeria/r12.jpg">
+                <a href="img/galeria/r12.jpg" class="open-img" aria-label="Ver foto de Rihanna en los MTV 2016">
                     <img src="img/galeria/r12_min.jpg" alt="Foto de Rihanna en los MTV 2016.">
                 </a>
-                <a href="img/galeria/r13.jpg">
-                    <img src="img/galeria/r13_min.jpg" alt="Foto de Rihanna en Victoria´s Secret Fashion Show 2015.">
+                <a href="img/galeria/r13.jpg" class="open-img" aria-label="Ver foto de Rihanna en Victoria's Secret Fashion Show 2015">
+                    <img src="img/galeria/r13_min.jpg" alt="Foto de Rihanna en Victoria's Secret Fashion Show 2015.">
                 </a>
             </div>
-        </section>
-
-        <div id="modal" class="modal">
-            <span class="close-btn" id="close-btn">&times;</span>
-            <img class="modal-content" id="modal-img">
+        </section>   
+        
+        <div class="overlay" style="display: none;">
+            <span class="arrow left">&#8592;</span>
+            <img src="" alt="" class="expanded-img">
+            <span class="arrow right">&#8594;</span>
+            <span class="close-btn">&#10006;</span> 
         </div>
 
         <section id="reconocimientos">
-            <H2>Reconocimientos</H2>
+            <h2>Reconocimientos</h2>
 
             <div class="fila">
                 <div class="columna">

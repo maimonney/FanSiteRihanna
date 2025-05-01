@@ -28,7 +28,7 @@ ul{
     left:0;
     top:0;
     right:0;
-    z-index: 99999;
+    z-index: 1000; 
 }
 
 .menu_ul{
@@ -65,6 +65,16 @@ h1{
     font-size: 80px;
 }
 
+h2 {
+    font-family: 'Impact', sans-serif;        
+    font-size: 2.5rem;        
+    letter-spacing: 1px;       
+    text-transform: uppercase; 
+    margin-bottom: 20px;
+    text-align: center;       
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
 .portada{
     background-image: linear-gradient(rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.096)), url(../img/r1.jpg);
     background-repeat: no-repeat ;
@@ -72,21 +82,42 @@ h1{
     background-attachment: scroll,fixed ;
     color: white;
     padding: 30px;
-    height: 510px;
+    height: 100vh;
+    position: relative;
 }
 
-.portada > div{
+.portada > .info_home{
     width: 500px;
-    margin-left: 50px;
-    margin-top: 150px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%); 
     margin-right: auto;
 }
 
-/*Contenido*/
+.scroll-down {
+    position: absolute;
+    bottom: 50px;  
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    animation: bounce 1s infinite;
+}
 
-h2{
-    font-family: 'Roboto Serif', serif;
-    text-align: center;
+.arrow {
+    font-size: 3rem; 
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+section{
+    margin: 250px 0;
 }
 
 /*Biografía*/
@@ -99,17 +130,6 @@ h2{
     max-width: 900px;      
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
     font-family: 'Roboto', sans-serif; 
-}
-
-#bio h2 {
-    font-family: 'Impact', sans-serif;  
-    color: #FFD700;           
-    font-size: 2.5rem;        
-    letter-spacing: 1px;       
-    text-transform: uppercase; 
-    margin-bottom: 20px;
-    text-align: center;       
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
 }
 
 #bio p {
@@ -137,6 +157,7 @@ h2{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0 100px;
 }
 
 .music a{
@@ -178,40 +199,105 @@ h2{
 
 #galeria a {
     text-decoration: none;
-    margin: 5px 5px 0 5px;
+    margin: 5px;
+    position: relative;
 }
 
-/* Estilo del modal */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
+#galeria img {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Estilos para la imagen expandida */
+.open-img {
+    display: inline-block;
+    position: relative;
+}
+
+.open-img img {
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    max-width: 100%;
+}
+
+.open-img img.expanded {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+    z-index: 1000;
+    transform: none;
+}
+
+/* Estilo para el fondo negro y la imagen ampliada */
+.overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.884);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1000;
+    display: none; 
 }
 
-/* Estilo para la imagen dentro del modal */
-.modal-content {
+.overlay img {
     max-width: 90%;
     max-height: 90%;
+    object-fit: contain;
 }
 
-/* Estilo del botón de cierre */
+/* Flechas de navegación */
+.arrow {
+    position: absolute;
+    top: 50%;
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+    z-index: 2000;
+    transform: translateY(-50%);
+}
+
+.arrow.left {
+    left: 100px;
+}
+
+.arrow.right {
+    right: 100px;
+}
+
+/* Estilo para la X de cerrar */
 .close-btn {
     position: absolute;
-    top: 20px;
-    right: 25px;
-    color: #fff;
-    font-size: 35px;
-    font-weight: bold;
+    top: 10px;
+    right: 50px;
+    font-size: 2rem;
+    color: white;
     cursor: pointer;
-    background: none;
-    border: none;
+    z-index: 100;
+}
+
+.open-img.expanded {
+    background-color: black; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
+
+.open-img img {
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    max-width: 100%;
 }
 
 /*Reconocimientos*/
