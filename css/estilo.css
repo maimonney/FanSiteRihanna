@@ -426,13 +426,19 @@ h2 {
 }
 
 /*Reconocimientos*/
-
 #reconocimientos{
-    margin: 40px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 
 #reconocimientos em{
-    color: rgb(238, 219, 110);
+    color: #FFD700;
+}
+
+.fila{
+    margin-bottom: 100px;
 }
 
 .text_rec p{

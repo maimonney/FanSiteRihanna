@@ -44,4 +44,4 @@ El sitio ofrece una experiencia visual con secciones bien diferenciadas, interac
 ---
 
 **Realizado por:** Mailen Monney  
-**Puedes pre-ver el sitio:**  
+**Puedes pre-ver el sitio:**  https://fan-site-rihanna.vercel.app
