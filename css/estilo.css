@@ -116,69 +116,128 @@ h2 {
     100% { transform: translateY(0); }
 }
 
-section{
-    height: 100vh;
+#bio, #cd, #film, #reconocimientos {
+    height: 100vh; 
 }
 
 /*Biografía*/
-#bio{
+#bio {
     display: flex;
-    padding: 30px 20px;    
-    margin: 40px auto; 
+    padding: 30px 20px;
+    margin: 40px auto;
     width: 90%;
 }
 
-#bio h2{
-    text-align: left;
-}
-
-#bio img{
-    width: 720px;
+.info_bio, .bio_texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 50%; 
+    height: 100%; 
+    box-sizing: border-box;
 }
 
 .info_bio {
-    color: #fff;            
-    border-radius: 10px;     
+    color: #fff;
+    border-radius: 10px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
 }
 
 .info_bio p {
     font-family: 'Arial', sans-serif;
     font-size: 1.1rem;
-    line-height: 1.6;          
-    margin-bottom: 20px;       
-    color: #ddd;              
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #ddd;
 }
 
 .info_bio em {
     font-style: italic;
-    color: #FFD700;           
+    color: #FFD700;
 }
 
-.nacimiento{
+.info_bio img {
+    width: 100%; /* Ajustamos el tamaño de las imágenes para que no excedan el contenedor */
+    max-width: 720px;
+}
+
+.nacimiento {
     display: flex;
     margin-top: 20px;
-    width: 720px;
+    width: 100%;
 }
 
-.bio_texto{
-    margin: 40px 20px; 
-    width: 80%;
-    border:  1px solid white;
+.bio_texto {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.bio_texto div{
-    border:  1px solid white;
-    margin-left: 20px;
+.bio_texto > div {
+    border: 1px solid white;
 }
 
-.bio_linea{
+.bio_linea {
     background-color: white;
+}
+
+.top-space, .bottom-space {
+    display: flex;
+    width: 100%;
+}
+
+.bottom-space{
+    height: 500px;
+}
+
+.square-box,
+.long-box-tx {
+    width: 150px;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid white;
+}
+
+.long-box-tx {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.long-box-tx img {
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.text-box,
+.long-box {
+    width: 100%;
+}
+
+.text-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-box p {
+    padding: 10px;
+}
+
+.long-box {
+    flex-grow: 1;
+    box-sizing: border-box;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
 }
 
 /*Discografía*/
@@ -205,9 +264,15 @@ section{
 }
 
 /*Filmografía*/
+#film{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
 
 .fila{
     display: flex;
+    flex-direction: row;
     justify-content: center;
 }
 
@@ -219,6 +284,27 @@ section{
 .columna ul{
     padding-left: 0;
 }
+
+.streetwear {
+    position: relative;
+    width: fit-content;
+  }
+  
+  .base-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .rihanna-img {
+    position: absolute;
+    top: -30px;
+    left: -20px; 
+    width: 300px;
+    height: auto;
+    z-index: 2;
+    transform: rotate(-2deg); 
+  }
 
 /* Galería de fotos */
 #galeria div {
@@ -232,6 +318,15 @@ section{
     margin: 5px;
     position: relative;
 }
+
+#galeria a {
+    transition: transform 0.3s ease-in-out; 
+}
+
+#galeria a:hover {
+    transform: scale(0.9); 
+}
+
 
 #galeria img {
     cursor: pointer;
@@ -270,7 +365,7 @@ section{
     left: 0;
     width: 100vw;
     height: 100vh;
-    display: flex;
+    display: none; 
     justify-content: center;
     align-items: center;
     z-index: 1000;
