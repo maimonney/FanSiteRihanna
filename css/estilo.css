@@ -770,4 +770,8 @@ h2 {
     .music img {
         width: 100%;
     }
+
+    #reconocimientos{
+        padding: 0;
+    }
 }
