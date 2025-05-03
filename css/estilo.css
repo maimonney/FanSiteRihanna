@@ -1,103 +1,105 @@
 /*General*/
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
-    margin: 0 ;
-    line-height: 1.5 ;
+body {
+    margin: 0;
+    line-height: 1.5;
     background-color: black;
     font-family: 'Poppins', sans-serif;
     color: white;
 
 }
 
-ul{
+ul {
     list-style: none;
 }
 
 /*Menú*/
-
-.menu{
+.menu {
     background-color: black;
     padding: 5px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: fixed ;
-    left:0;
-    top:0;
-    right:0;
-    z-index: 1000; 
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 1000;
 }
 
-.menu_ul{
+.menu_ul {
     display: flex;
-    padding: 0 ;
-    margin: 0 ;
+    padding: 0;
+    margin: 0;
 }
 
-.menu_ul a{
+.menu_ul a {
     color: white;
     text-decoration: none;
     margin: 10px;
     font-size: 17px;
 }
 
-.menu_ul a:hover{
-color: #FFD700;
+.menu_ul a:hover {
+    color: #FFD700;
 }
 
-.menu_ul a:visited{
+.menu_ul a:visited {
     color: goldenrod;
 }
-    
+
 
 /*Portada*/
-
-h1, h2{
+h1,
+h2 {
     color: #FFD700;
     text-transform: uppercase;
 }
 
-h1{
+h1 {
     font-family: 'Bebas Neue', cursive;
-    font-size: 80px;
+    font-size: 10vw;
 }
 
 h2 {
-    font-family: 'Impact', sans-serif;        
-    font-size: 2.5rem;        
-    letter-spacing: 1px;       
-    text-transform: uppercase; 
+    font-family: 'Impact', sans-serif;
+    font-size: 5vw;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     margin-bottom: 20px;
-    text-align: center;       
+    text-align: center;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
 }
 
-.portada{
+.portada {
     background-image: linear-gradient(rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.096)), url(../img/r1.jpg);
-    background-repeat: no-repeat ;
-    background-size: cover ;
-    background-attachment: scroll,fixed ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll, fixed;
     color: white;
     padding: 30px;
     height: 100vh;
     position: relative;
 }
 
-.portada > .info_home{
-    width: 500px;
+.portada>.info_home {
     position: absolute;
     top: 50%;
     left: 10%;
-    transform: translateY(-50%); 
+    transform: translateY(-50%);
     margin-right: auto;
+}
+
+.info_home p {
+    width: 50%;
 }
 
 .scroll-down {
     position: absolute;
-    bottom: 50px;  
+    bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 2rem;
@@ -107,18 +109,23 @@ h2 {
 }
 
 .arrow {
-    font-size: 3rem; 
+    font-size: 3rem;
 }
 
 @keyframes bounce {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0); }
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
-#bio, #cd, #film, #reconocimientos {
-    height: 100vh; 
-}
 
 /*Biografía*/
 #bio {
@@ -128,13 +135,14 @@ h2 {
     width: 90%;
 }
 
-.info_bio, .bio_texto {
+.info_bio,
+.bio_texto {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 50%; 
-    height: 100%; 
+    width: 50%;
+    height: 100%;
     box-sizing: border-box;
 }
 
@@ -160,7 +168,7 @@ h2 {
 }
 
 .info_bio img {
-    width: 100%; /* Ajustamos el tamaño de las imágenes para que no excedan el contenedor */
+    width: 100%;
     max-width: 720px;
 }
 
@@ -170,6 +178,12 @@ h2 {
     width: 100%;
 }
 
+.nacimiento img {
+    width: 100%;
+    height: 100%;
+}
+
+
 .bio_texto {
     display: flex;
     flex-direction: column;
@@ -177,7 +191,7 @@ h2 {
     align-items: center;
 }
 
-.bio_texto > div {
+.bio_texto>div {
     border: 1px solid white;
 }
 
@@ -185,12 +199,13 @@ h2 {
     background-color: white;
 }
 
-.top-space, .bottom-space {
+.top-space,
+.bottom-space {
     display: flex;
     width: 100%;
 }
 
-.bottom-space{
+.bottom-space {
     height: 500px;
 }
 
@@ -220,7 +235,7 @@ h2 {
     width: 100%;
 }
 
-.text-box{
+.text-box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -241,70 +256,72 @@ h2 {
 }
 
 /*Discografía*/
-
-.music{
+.music {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 100px;
 }
 
-.music a{
+.music a {
     text-align: center;
     text-decoration: none;
     color: inherit;
 }
 
 .music figure {
-    transition: transform 0.3s ease-in-out; 
+    transition: transform 0.3s ease-in-out;
 }
 
 .music figure:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
 /*Filmografía*/
-#film{
+#film {
     display: flex;
     justify-content: center;
     gap: 50px;
 }
 
-.fila{
+.fila {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.columna{
+.columna {
     padding: 0 10px;
     margin: 25px;
 }
 
-.columna ul{
+.columna ul {
     padding-left: 0;
 }
 
 .streetwear {
     position: relative;
-    width: fit-content;
-  }
-  
-  .base-img {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.base-img {
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
-  }
-  
-  .rihanna-img {
+}
+
+.rihanna-img {
     position: absolute;
-    top: -30px;
-    left: -20px; 
-    width: 300px;
+    top: -5%;
+    left: -4%;
+    width: 60%;
     height: auto;
     z-index: 2;
-    transform: rotate(-2deg); 
-  }
+    transform: rotate(-2deg);
+}
+
 
 /* Galería de fotos */
 #galeria div {
@@ -320,11 +337,11 @@ h2 {
 }
 
 #galeria a {
-    transition: transform 0.3s ease-in-out; 
+    transition: transform 0.3s ease-in-out;
 }
 
 #galeria a:hover {
-    transform: scale(0.9); 
+    transform: scale(0.9);
 }
 
 
@@ -365,11 +382,11 @@ h2 {
     left: 0;
     width: 100vw;
     height: 100vh;
-    display: none; 
+    display: none;
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    display: none; 
+    display: none;
 }
 
 .overlay img {
@@ -409,7 +426,7 @@ h2 {
 }
 
 .open-img.expanded {
-    background-color: black; 
+    background-color: black;
     position: fixed;
     top: 0;
     left: 0;
@@ -426,69 +443,331 @@ h2 {
 }
 
 /*Reconocimientos*/
-.separador{
-    text-align: center;
+.separador {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
     margin-top: 100px;
+
 }
 
-#reconocimientos{
+.separador img {
+    width: 50%;
+    height: auto;
+    max-width: 100%;
+}
+
+
+#reconocimientos {
     display: flex;
     flex-direction: column;
     justify-content: end;
     margin: 20px;
 }
 
-#reconocimientos em{
+#reconocimientos em {
     color: #FFD700;
 }
 
-.fila{
+.fila {
     margin-bottom: 100px;
 }
 
-.text_rec p{
+.text_rec p {
     text-align: center;
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.text_rec hr{
+.text_rec hr {
     height: 3px;
     background-color: #FFD700;
     border-color: #FFD700;
-    width: 90%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
 
+
 /*Footer*/
-
-.pie_pag{
+.pie_pag {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
 }
 
-.fila_redes{
+.fila_redes {
     display: flex;
 }
 
-.fila_redes a{
+.fila_redes a {
     margin: 10px;
     text-decoration: none;
     color: white;
 }
 
-.fila_redes a:hover{
+.fila_redes a:hover {
     color: #FFD700;
 }
 
-.fila_redes a:visited{
+.fila_redes a:visited {
     color: goldenrod;
 }
 
-.text_center{
+.text_center {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 10px;
+}
+
+/* Responsive */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media (min-width: 900px) {
+    #film{
+        margin-top: 150px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .text-box p {
+        padding: 10px;
+        font-size: .8em;
+    }
+
+    .nacimiento {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nacimiento img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    #bio,
+    #cd,
+    #film,
+    #reconocimientos {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    /* Menu */
+    .menu {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+    .menu_ul {
+        flex-direction: column;
+        width: 100%;
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        transition: max-height 0.5s ease, opacity 0.5s ease;
+        background-color: black;
+    }
+
+    .menu_ul.show {
+        max-height: 500px;
+        opacity: 1;
+    }
+
+    .menu_ul li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    /* Portada */
+    .portada {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.096)), url(../img/r3.jpg);
+        background-position: right center;
+    }
+
+    .info_home p {
+        width: 80%;
+    }
+
+    /* Biografia */
+    #bio {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info_bio,
+    .bio_texto {
+        width: 100%;
+        height: auto;/
+    }
+
+    .nacimiento {
+        flex-direction: column;
+    }
+
+    .square-box,
+    .long-box-tx {
+        display: none;
+    }
+
+    .long-box {
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+
+    .bottom-space {
+        height: auto;
+    }
+
+    /* Filmografia */
+    #film,
+    .fila {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Galeria */
+    #galeria img {
+        width: 200px;
+        height: auto;
+    }
+
+    .arrow {
+        bottom: 20px;
+        top: auto;
+        transform: none;
+    }
+
+    .arrow.left {
+        left: 20px;
+    }
+
+    .arrow.right {
+        right: 20px;
+    }
+
+    /* Footer */
+    .pie_pag {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .fila_redes {
+        justify-content: center;
+    }
+
+    .pie_pag a {
+        margin: 100px 8px;
+    }
+
+    .fila_redes a {
+        margin: 20px 8px;
+    }
+
+    .text_center small {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 800px) {
+
+    /* Discografia */
+    .music {
+        margin: 0;
+    }
+
+    .music figure {
+        margin: 20px;
+    }
+
+    .rihanna-img {
+        top: -4%;
+        left: -3%;
+        width: 70%;
+        transform: rotate(-1deg);
+    }
+}
+
+@media (max-width: 500px) {
+    .nacimiento {
+        flex-direction: column;
+    }
+
+    .square-box,
+    .long-box-tx {
+        display: none;
+    }
+
+    .long-box {
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+
+    .bottom-space {
+        height: auto;
+    }
+
+    .portada {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.096)), url(../img/r4.jpg);
+        background-position: right center;
+    }
+
+    /* Footer */
+    .fila_redes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fila_redes a {
+        font-size: 0.9rem;
+        margin: 8px 0;
+    }
+
+    .text_center small {
+        font-size: 0.9rem;
+    }
+
+    /* Discografia */
+    #cd{
+        padding: 10px;
+    }
+
+    .music {
+        margin: 0;
+    }
+
+    .music figure {
+        margin: 10px;
+        width: 120px;
+    }
+
+    .music img {
+        width: 100%;
+    }
 }

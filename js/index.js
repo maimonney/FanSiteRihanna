@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+    // GALERÍA
     const enlaces = document.querySelectorAll('.open-img');
     const overlay = document.querySelector('.overlay');
     const expandedImg = document.querySelector('.expanded-img');
@@ -40,4 +41,14 @@ document.addEventListener('DOMContentLoaded', function () {
             overlay.style.display = 'none';
         }
     });
+
+    // MENÚ HAMBURGUESA RESPONSIVE
+    const toggleBtn = document.querySelector('.menu-toggle');
+    const menuList = document.querySelector('.menu_ul');
+
+    if (toggleBtn && menuList) {
+        toggleBtn.addEventListener('click', () => {
+            menuList.classList.toggle('show');
+        });
+    }
 });
