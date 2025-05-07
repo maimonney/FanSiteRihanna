@@ -1,36 +1,37 @@
 # 🌟 Fan Site: Rihanna
 
-Sitio web estático creado con **HTML** y **CSS**, en homenaje a la trayectoria artística de **Rihanna**. El proyecto explora su discografía, apariciones en cine y TV, y su impacto en el mundo de la moda.
+Sitio web estático desarrollado con **HTML**, **CSS** y **JavaScript**, dedicado a celebrar la trayectoria artística y cultural de **Rihanna**. Este proyecto integra diseño visual, navegación fluida y contenido multimedia para ofrecer una experiencia interactiva y atractiva.
 
 ## 🧾 Descripción
 
-El sitio presenta un diseño visual atractivo con secciones bien definidas, pequeñas animaciones al pasar el cursor y una estructura responsive pensada principalmente para escritorio. Su enfoque combina estética editorial y elementos interactivos sutiles.
+El sitio cuenta con un diseño responsive que se adapta correctamente a distintas resoluciones. Presenta un estilo moderno con estética inspirada en la figura pública de Rihanna, acompañado por una paleta vibrante, tipografía personalizada y transiciones suaves. Incluye música de fondo, efectos dinámicos en la navegación, un modo nocturno, y animaciones que mejoran la interacción del usuario.
+
+## 🧪 Funcionalidades destacadas
+
+- 🎯 **Navegación suave (smooth scroll)** entre secciones.
+- ✨ **Animaciones** en scroll y al interactuar con elementos.
+- 📱 **Diseño responsive** para escritorio, tablet y móvil.
 
 ## 📚 Tecnologías utilizadas
 
-- 🧱 **HTML5** – estructura semántica del contenido.  
-- 🎨 **CSS3** – estilos visuales con Flexbox, posicionamiento, `hover`, `z-index`, `transform` y transiciones.  
-- 📷 **Imágenes optimizadas** – organizadas en carpetas temáticas.  
-- 🔗 **Enlaces externos** – integración con plataformas como Spotify.
+- 🧱 **HTML5** – Estructura semántica.
+- 🎨 **CSS3** – Estilos con Flexbox, grid, variables CSS, transiciones y efectos.
+- ⚙️ **JavaScript** – Interactividad, audio, scroll, toggle de modo oscuro y otros scripts.
 
-## 🖼️ Secciones principales
+## 🖼️ Secciones del sitio
 
-- 🎵 **Discografía** – Portadas de álbumes enlazadas a Spotify.  
-- 🎬 **Filmografía** – Listado de películas y programas.  
-- 📸 **Galería** – Composición visual con imágenes superpuestas.  
-- ✨ **Animaciones** – Efectos de interacción al pasar el mouse.
+- **Inicio** – Hero section con bienvenida, imagen destacada y CTA.
+- **Biografía** – Resumen de su trayectoria.
+- **Discografía** – Galería interactiva con enlaces a Spotify.
+- **Filmografía** – Listado con fichas de sus apariciones en cine y TV.
+- **Galería** – Composición visual con overlay y efectos al hacer hover.
+- **Premios y reconocimientos** – Grid con animaciones al aparecer.
 
-## 🎯 Objetivos del proyecto
+## 🎯 Objetivo del proyecto
 
-- Practicar maquetado semántico y organización de contenido.  
-- Explorar efectos visuales con `position`, `transform`, `hover` y `z-index`.  
-- Trabajar una propuesta creativa con foco en diseño visual y narrativa temática.
-
-## 💡 Próximas mejoras
-
-- 📱 Adaptación responsive completa para móviles.  
-- ⚙️ Interacciones avanzadas con JavaScript.  
-- 🔊 Inclusión de contenido multimedia embebido.
+- Integrar diseño visual, interacción y contenido temático en una web estática.
+- Reforzar conocimientos en **maquetación**, **estilos responsivos**, y **JavaScript básico** para crear una experiencia de usuario atractiva.
+- Representar la imagen y esencia de una figura icónica desde una mirada creativa.
 
 ## 🚀 Ver el sitio
 
