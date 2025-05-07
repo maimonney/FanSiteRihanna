@@ -1,47 +1,41 @@
-# 🌟 Sitio Web - Rihanna
+# 🌟 Fan Site: Rihanna
 
-Este proyecto es un sitio web estático creado con **HTML** y **CSS** que celebra la trayectoria artística de la cantante **Rihanna**, incluyendo su discografía, filmografía y su influencia en la moda.
+Sitio web estático creado con **HTML** y **CSS**, en homenaje a la trayectoria artística de **Rihanna**. El proyecto explora su discografía, apariciones en cine y TV, y su impacto en el mundo de la moda.
 
 ## 🧾 Descripción
 
-El sitio ofrece una experiencia visual con secciones bien diferenciadas, interactividad sutil al pasar el cursor por encima de ciertos elementos, y una estructura responsive básica pensada para pantalla de escritorio.
+El sitio presenta un diseño visual atractivo con secciones bien definidas, pequeñas animaciones al pasar el cursor y una estructura responsive pensada principalmente para escritorio. Su enfoque combina estética editorial y elementos interactivos sutiles.
 
-## 📚 Lenguajes y tecnologías
+## 📚 Tecnologías utilizadas
 
-- 🧱 **HTML5**: estructura del contenido.
-- 🎨 **CSS3**: estilos visuales, layout con Flexbox, posicionamiento relativo y absoluto, transiciones, transformaciones y efectos de superposición.
-- 📷 **Imágenes**: optimizadas para web, ubicadas dentro de carpetas específicas (`img/`, `img/cd/`).
-- 🌐 *(Opcional)* Integración externa con plataformas como Spotify mediante enlaces.
-
-## 📁 Estructura del proyecto
-
+- 🧱 **HTML5** – estructura semántica del contenido.  
+- 🎨 **CSS3** – estilos visuales con Flexbox, posicionamiento, `hover`, `z-index`, `transform` y transiciones.  
+- 📷 **Imágenes optimizadas** – organizadas en carpetas temáticas.  
+- 🔗 **Enlaces externos** – integración con plataformas como Spotify.
 
 ## 🖼️ Secciones principales
 
-- 🎵 **Discografía**: Portadas de álbumes enlazadas a Spotify.
-- 🎬 **Filmografía**: Listado de películas y programas de TV en los que participó.
-- 🖼️ **Galería de fotos**: Composición artística con imágenes superpuestas, respetando tamaños originales.
-- ✨ **Animaciones**: Efectos de zoom o desplazamiento al pasar el mouse.
+- 🎵 **Discografía** – Portadas de álbumes enlazadas a Spotify.  
+- 🎬 **Filmografía** – Listado de películas y programas.  
+- 📸 **Galería** – Composición visual con imágenes superpuestas.  
+- ✨ **Animaciones** – Efectos de interacción al pasar el mouse.
 
-## 🧪 Objetivo del proyecto
+## 🎯 Objetivos del proyecto
 
-- Practicar maquetación semántica con HTML.
-- Explorar técnicas de superposición de imágenes.
-- Utilizar `position`, `transform`, `z-index` y `hover` en CSS para lograr efectos visuales.
-- Experimentar con un diseño creativo orientado a un ícono de la música y la moda.
+- Practicar maquetado semántico y organización de contenido.  
+- Explorar efectos visuales con `position`, `transform`, `hover` y `z-index`.  
+- Trabajar una propuesta creativa con foco en diseño visual y narrativa temática.
 
-## 💡 Mejora futura (opcional)
+## 💡 Próximas mejoras
 
-- Adaptación responsiva completa para dispositivos móviles.
-- Agregar JavaScript para efectos más dinámicos.
-- Incluir audio embebido o animaciones con JavaScript o librerías externas.
+- 📱 Adaptación responsive completa para móviles.  
+- ⚙️ Interacciones avanzadas con JavaScript.  
+- 🔊 Inclusión de contenido multimedia embebido.
 
-## 🚀 Cómo ver el sitio
+## 🚀 Ver el sitio
 
-1. Cloná o descargá este repositorio.
-2. Abrí el archivo `index.html` con tu navegador preferido.
+👉 [https://fan-site-rihanna.vercel.app](https://fan-site-rihanna.vercel.app)
 
 ---
 
-**Realizado por:** Mailen Monney  
-**Puedes pre-ver el sitio:**  https://fan-site-rihanna.vercel.app
+**👩‍💻 Desarrollado por:** Mailen Monney
